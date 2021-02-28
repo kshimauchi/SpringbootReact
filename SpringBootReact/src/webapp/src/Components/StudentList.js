@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import CardView from './CardView';
 
 class StudentList extends React.Component {
     state = {
@@ -29,7 +30,9 @@ class StudentList extends React.Component {
             return <div>Loading...</div>;
         }else {
             return (
+                
                 <ul>
+                   
                     {students.map(student => (
                         <li key={student.id}>
                         
